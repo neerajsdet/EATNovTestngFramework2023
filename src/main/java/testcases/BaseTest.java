@@ -55,6 +55,12 @@ public class BaseTest {
 
     }
 
+    @Test(priority = 5)
+    public void DemoTest(){
+        System.out.println("test method");
+
+    }
+
     
     @AfterClass
     public void tearDown(){
