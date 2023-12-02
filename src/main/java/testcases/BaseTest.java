@@ -66,8 +66,15 @@ public class BaseTest {
 
     }
 
+    @Test(priority =7)
+    public void DemoTest7(){
+        System.out.println("test method");
 
-    
+    }
+
+
+
+
     @AfterClass
     public void tearDown(){
         driver.quit();
