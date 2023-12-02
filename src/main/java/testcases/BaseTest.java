@@ -60,6 +60,12 @@ public class BaseTest {
         System.out.println("test method");
 
     }
+    @Test(priority =6)
+    public void DemoTest1(){
+        System.out.println("test method");
+
+    }
+
 
     
     @AfterClass
