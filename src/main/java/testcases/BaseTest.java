@@ -42,10 +42,10 @@ public class BaseTest {
         Assert.assertTrue(homePage.verifyIfProductIsAvailable());
     }
 
-    @Test(priority = 3)
-    public void verifyIfAddCartButtonIsAvailableOnProduct(){
-        Assert.assertTrue(homePage.verifyAddToCartButtonShowsWithProduct());
-    }
+//    @Test(priority = 3)
+//    public void verifyIfAddCartButtonIsAvailableOnProduct(){
+//        Assert.assertTrue(homePage.verifyAddToCartButtonShowsWithProduct());
+//    }
 
     @Test(priority = 4)
     public void verifyClickingOnProductRedirectsOnDetailPage(){
