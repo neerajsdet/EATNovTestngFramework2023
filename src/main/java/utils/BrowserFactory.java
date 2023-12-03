@@ -1,6 +1,5 @@
 package utils;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -14,10 +13,10 @@ public class BrowserFactory {
     public static WebDriver launchGivenBrowser(String browserName){
         WebDriver driver=null;
         if(browserName.equalsIgnoreCase("Chrome")){
-            WebDriverManager.chromedriver().setup();
+            //WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
         }else if(browserName.equalsIgnoreCase("Firefox")){
-            System.setProperty("webdriver.gecko.driver", "geckodriver.exe");
+            //System.setProperty("webdriver.gecko.driver", "geckodriver.exe");
             driver = new FirefoxDriver();
         }else if(browserName.equalsIgnoreCase("Safari")){
             driver = new SafariDriver();

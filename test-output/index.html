@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Single" class="navigator-link">
-              <span class="suite-name border-failed">Single</span>
+              <span class="suite-name border-passed">Single</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,31 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 3 failed,   2 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Single" class="hide-methods failed suite-Single"> (hide)</a> <!-- hide-methods failed suite-Single -->
-                      <a href="#" panel-name="suite-Single" class="show-methods failed suite-Single"> (show)</a> <!-- show-methods failed suite-Single -->
-                    </span>
-                    <div class="method-list-content failed suite-Single">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Single" title="testcases.BaseTest" class="method navigator-link" hash-for-method="verifyClickingOnProductRedirectsOnDetailPage">verifyClickingOnProductRedirectsOnDetailPage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Single" title="testcases.BaseTest" class="method navigator-link" hash-for-method="verifyIfTheApplicationLaunchSuccessfully">verifyIfTheApplicationLaunchSuccessfully</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Single" title="testcases.BaseTest" class="method navigator-link" hash-for-method="verifyIfTheProductDisplayOnHomePage">verifyIfTheProductDisplayOnHomePage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Single -->
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -135,6 +111,21 @@
                         <a href="#" panel-name="suite-Single" title="testcases.BaseTest" class="method navigator-link" hash-for-method="DemoTest1">DemoTest1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Single" title="testcases.BaseTest" class="method navigator-link" hash-for-method="verifyClickingOnProductRedirectsOnDetailPage">verifyClickingOnProductRedirectsOnDetailPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Single" title="testcases.BaseTest" class="method navigator-link" hash-for-method="verifyIfTheApplicationLaunchSuccessfully">verifyIfTheApplicationLaunchSuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Single" title="testcases.BaseTest" class="method navigator-link" hash-for-method="verifyIfTheProductDisplayOnHomePage">verifyIfTheProductDisplayOnHomePage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-Single -->
                   </li>
                 </ul>
@@ -147,110 +138,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Single" class="panel Single">
-          <div class="suite-Single-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">testcases.BaseTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyClickingOnProductRedirectsOnDetailPage">
-                  </a> <!-- verifyClickingOnProductRedirectsOnDetailPage -->
-                  <span class="method-name">verifyClickingOnProductRedirectsOnDetailPage</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;NAGARWAL&apos;, ip: &apos;192.168.29.195&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.20&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 120.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20231129155202, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 17436, moz:profile: C:\Users\nagarwal\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: bcc433f6-affc-4b2e-bfa1-5c13524d4bc3
-*** Element info: {Using=xpath, value=//a[normalize-space()=&apos;Argus All-Weather Tank&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy8.click(Unknown Source)
-	at pageobjects.HomePage.clickOnProduct(HomePage.java:45)
-	at testcases.BaseTest.verifyClickingOnProductRedirectsOnDetailPage(BaseTest.java:52)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 35 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyIfTheApplicationLaunchSuccessfully">
-                  </a> <!-- verifyIfTheApplicationLaunchSuccessfully -->
-                  <span class="method-name">verifyIfTheApplicationLaunchSuccessfully</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: Browsing context has been discarded
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;NAGARWAL&apos;, ip: &apos;192.168.29.195&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.20&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 120.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20231129155202, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 17436, moz:profile: C:\Users\nagarwal\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: bcc433f6-affc-4b2e-bfa1-5c13524d4bc3
-*** Element info: {Using=xpath, value=//input[@id=&apos;search&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy8.isDisplayed(Unknown Source)
-	at pageobjects.HomePage.verifyIfSearchBarIsAvailable(HomePage.java:33)
-	at testcases.BaseTest.verifyIfTheApplicationLaunchSuccessfully(BaseTest.java:37)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 35 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyIfTheProductDisplayOnHomePage">
-                  </a> <!-- verifyIfTheProductDisplayOnHomePage -->
-                  <span class="method-name">verifyIfTheProductDisplayOnHomePage</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Failed to decode response from marionette
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;NAGARWAL&apos;, ip: &apos;192.168.29.195&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.20&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 120.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20231129155202, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 17436, moz:profile: C:\Users\nagarwal\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: bcc433f6-affc-4b2e-bfa1-5c13524d4bc3
-*** Element info: {Using=xpath, value=//a[normalize-space()=&apos;Argus All-Weather Tank&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy8.isDisplayed(Unknown Source)
-	at pageobjects.HomePage.verifyIfProductIsAvailable(HomePage.java:41)
-	at testcases.BaseTest.verifyIfTheProductDisplayOnHomePage(BaseTest.java:42)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 35 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Single-class-failed -->
           <div class="suite-Single-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -269,6 +156,27 @@ Session ID: bcc433f6-affc-4b2e-bfa1-5c13524d4bc3
                   <a name="DemoTest1">
                   </a> <!-- DemoTest1 -->
                   <span class="method-name">DemoTest1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyClickingOnProductRedirectsOnDetailPage">
+                  </a> <!-- verifyClickingOnProductRedirectsOnDetailPage -->
+                  <span class="method-name">verifyClickingOnProductRedirectsOnDetailPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyIfTheApplicationLaunchSuccessfully">
+                  </a> <!-- verifyIfTheApplicationLaunchSuccessfully -->
+                  <span class="method-name">verifyIfTheApplicationLaunchSuccessfully</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyIfTheProductDisplayOnHomePage">
+                  </a> <!-- verifyIfTheProductDisplayOnHomePage -->
+                  <span class="method-name">verifyIfTheProductDisplayOnHomePage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -328,30 +236,30 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyIfTheProductDisplayOnHomePage')
+data.setCell(0, 1, 'verifyClickingOnProductRedirectsOnDetailPage')
 data.setCell(0, 2, 'testcases.BaseTest')
-data.setCell(0, 3, 256);
+data.setCell(0, 3, 6044);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifyIfTheApplicationLaunchSuccessfully')
 data.setCell(1, 2, 'testcases.BaseTest')
-data.setCell(1, 3, 36);
+data.setCell(1, 3, 25);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyClickingOnProductRedirectsOnDetailPage')
+data.setCell(2, 1, 'verifyIfTheProductDisplayOnHomePage')
 data.setCell(2, 2, 'testcases.BaseTest')
-data.setCell(2, 3, 4);
+data.setCell(2, 3, 17);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'DemoTest')
+data.setCell(3, 1, 'DemoTest1')
 data.setCell(3, 2, 'testcases.BaseTest')
-data.setCell(3, 3, 0);
+data.setCell(3, 3, 1);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'DemoTest1')
+data.setCell(4, 1, 'DemoTest')
 data.setCell(4, 2, 'testcases.BaseTest')
 data.setCell(4, 3, 0);
 window.suiteTableData['Single']= { tableData: data, tableDiv: 'times-div-Single'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 296 ms</span>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
               <div id="times-div-Single">
               </div> <!-- times-div-Single -->
             </div> <!-- times-div -->
@@ -383,37 +291,29 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">verifyIfTheApplicationLaunchSuccessfully</span>
-                <span class="method-start">3907 ms</span>
+                <span class="method-start">6770 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">verifyIfTheProductDisplayOnHomePage</span>
-                <span class="method-start">3947 ms</span>
+                <span class="method-start">6798 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">verifyClickingOnProductRedirectsOnDetailPage</span>
-                <span class="method-start">4205 ms</span>
+                <span class="method-start">6816 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">tearDown</span>
-                <span class="method-start">4210 ms</span>
-              </div> <!-- configuration-class after -->
               <div class="test-method">
                 <span class="method-name">DemoTest</span>
-                <span class="method-start">4210 ms</span>
+                <span class="method-start">12861 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">DemoTest1</span>
-                <span class="method-start">4210 ms</span>
+                <span class="method-start">12862 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">12864 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
