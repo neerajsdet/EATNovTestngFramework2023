@@ -25,7 +25,7 @@ public class BaseTest {
 
     @BeforeClass
     public void setUp(){
-        driver = BrowserFactory.launchGivenBrowser("chrome");
+        driver = BrowserFactory.launchGivenBrowser("firefox");
         homePage = new HomePage(driver);
         productDetailsPage = new ProductDetailsPage(driver);
         driver.get("https://magento.softwaretestingboard.com/");
