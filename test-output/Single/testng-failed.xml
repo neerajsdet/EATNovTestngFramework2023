@@ -6,9 +6,11 @@
     <classes>
       <class name="testcases.BaseTest">
         <methods>
+          <include name="verifyClickingOnProductRedirectsOnDetailPage"/>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="verifyIfAddCartButtonIsAvailableOnProduct"/>
+          <include name="verifyIfTheApplicationLaunchSuccessfully"/>
+          <include name="verifyIfTheProductDisplayOnHomePage"/>
         </methods>
       </class> <!-- testcases.BaseTest -->
     </classes>
