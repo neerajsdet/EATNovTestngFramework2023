@@ -11,6 +11,8 @@
 <!--        </groups>-->
         <classes>
             <class name="apiTest.ValidatePostMethod"/>
+            <class name="apiTest.ValidateGetRequest"/>
+            <class name="apiTest.ValidatePutRequest"/>
         </classes>
 
 
