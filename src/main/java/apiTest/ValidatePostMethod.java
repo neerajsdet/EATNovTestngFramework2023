@@ -1,5 +1,7 @@
 package apiTest;
 
+import io.restassured.response.Response;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.HashMap;
@@ -75,5 +77,37 @@ public class ValidatePostMethod {
                 .body("title", equalTo("BookNewForAutomation"));
 
     }
+
+
+    @Test
+    public static void validateResponseUsingAssert(){
+        payload = new HashMap();
+        payload.put("id", "101");
+        payload.put("title", "BookNewForAutomation");
+        payload.put("description", "this book we are creating for testing purpose");
+        payload.put("pageCount", "1");
+        payload.put("excerpt", "testing");
+        payload.put("publishDate","2023-12-16T16:44:59.059Z");
+
+        Response res =  given().contentType(contentType).body(payload)
+                .when()
+                .post(urlPostRequest)
+                .then()
+                .statusCode(200)
+                .log()
+                .body().extract().response();
+
+
+        String response = res.asString();
+
+        Assert.assertTrue(response.contains("BookNewForAutomation"));
+        Assert.assertTrue(response.contains("this book we are creating for testing purpose"));
+        Assert.assertTrue(response.contains("testing"));
+
+
+    }
+
+
+
 
 }

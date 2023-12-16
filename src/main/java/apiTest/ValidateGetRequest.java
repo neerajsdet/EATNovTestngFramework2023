@@ -1,5 +1,7 @@
 package apiTest;
 
+import io.restassured.response.Response;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
@@ -53,6 +55,23 @@ public class ValidateGetRequest {
                 .get(urlGetRequest2)
                 .then()
                 .statusCode(400);
+    }
+
+    @Test
+    public void verifyResponseUsingAssert(){
+        Response res = given()
+                .when()
+                .get(urlGetRequest1)
+                .then()
+                .statusCode(200)
+                .log()
+                .body().extract().response();
+
+        String output = res.asString();
+
+        Assert.assertTrue(output.contains("Book 100"));
+
+
     }
 
 }
