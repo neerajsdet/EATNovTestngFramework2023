@@ -13,6 +13,7 @@
             <class name="apiTest.ValidatePostMethod"/>
             <class name="apiTest.ValidateGetRequest"/>
             <class name="apiTest.ValidatePutRequest"/>
+            <class name="apiTest.ValidateDeleteRequest"/>
         </classes>
 
 
