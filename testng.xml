@@ -10,7 +10,7 @@
 <!--            </run>-->
 <!--        </groups>-->
         <classes>
-            <class name="testcases.BaseTest"/>
+            <class name="apiTest.ValidatePostMethod"/>
         </classes>
 
 
