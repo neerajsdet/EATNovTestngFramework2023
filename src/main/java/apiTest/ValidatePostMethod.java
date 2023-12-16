@@ -72,7 +72,7 @@ public class ValidatePostMethod {
                 .statusCode(200)
                 .log()
                 .body()
-                .body("title", equalTo("Book New ForAutomation"));
+                .body("title", equalTo("BookNewForAutomation"));
 
     }
 
