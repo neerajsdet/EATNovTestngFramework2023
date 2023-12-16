@@ -28,7 +28,7 @@ public class BaseTest {
         driver = BrowserFactory.launchGivenBrowser(prop.getProperty("browser"));
         homePage = new HomePage(driver);
         productDetailsPage = new ProductDetailsPage(driver);
-        driver.get("https://magento.softwaretestingboard.com/");
+        driver.get(prop.getProperty("url"));
 
     }
 
@@ -57,7 +57,11 @@ public class BaseTest {
 
     @Test(priority = 5)
     public void DemoTest(){
-        System.out.println("test method");
+        //System.out.println("test method");
+//        homepage.enterUserName("abc@gmail.com");
+//        homepage.enterPassword("abc@gmail.com");
+//        homepage.clickOnSubmitButton();
+//        Assert.assertTrue(feedpage.enterUserName("abc@gmail.com"));
 
     }
     @Test(priority =6)
